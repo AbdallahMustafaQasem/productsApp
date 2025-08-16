@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application theme for Android 15+ (API 35+) with edge-to-edge disabled -->
+    <style name="Theme.ProductBrowser" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <!-- Primary fix: Disable edge-to-edge enforcement -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        
+        <!-- Additional window styling for Android 15+ -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- Ensure traditional window behavior -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+</resources>

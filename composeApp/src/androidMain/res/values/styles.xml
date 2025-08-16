@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application theme with edge-to-edge disabled -->
+    <style name="Theme.ProductBrowser" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <!-- Disable edge-to-edge enforcement -->
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        
+        <!-- Optional: Traditional window styling -->
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

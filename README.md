@@ -130,29 +130,7 @@ Run Android-specific tests:
 ./gradlew :composeApp:testDebugUnitTest
 ```
 
-## Development Trade-offs and Assumptions
 
-### Technical Decisions
-
-#### 1. Custom Navigation vs. Third-party Libraries
-**Decision**: Implemented custom navigation system
-**Reason**: Avoided dependency conflicts with Compose Multiplatform versions
-**Trade-off**: More development time but better version control and customization
-
-#### 2. Custom Image Loading vs. External Libraries
-**Decision**: Used Compose's built-in AsyncImage with custom wrapper
-**Reason**: Reduced dependencies and potential compatibility issues
-**Trade-off**: Less advanced features but better stability across platforms
-
-#### 3. In-memory Caching vs. Persistent Storage
-**Decision**: Implemented simple in-memory caching
-**Reason**: Faster implementation and sufficient for current requirements
-**Trade-off**: Data lost on app restart but better performance
-
-#### 4. Manual State Management vs. State Management Libraries
-**Decision**: Used StateFlow with custom state management
-**Reason**: Leverages Kotlin Coroutines' native capabilities
-**Trade-off**: More boilerplate but predictable behavior
 
 ### API Assumptions
 
